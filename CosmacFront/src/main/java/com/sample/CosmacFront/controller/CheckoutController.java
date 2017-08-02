@@ -26,8 +26,8 @@ public class CheckoutController {
 		System.out.println("CheckoutController -- begins -- ");
 		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
 		String loggedInUsername = auth.getName();
-		Users u = usersDao.getUserByUsername(loggedInUsername);
+		Users users = usersDao.getUserByUsername(loggedInUsername);
 		System.out.println("CheckoutController -- ends -- ");
-		return "redirect:/checkout?userId="+u.getUserId();
+		return "redirect:/checkout?userId="+users.getUserId();
 	}
 }

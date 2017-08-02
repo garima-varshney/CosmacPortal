@@ -17,14 +17,12 @@
 		model="order">
 		<transition on="customerInfoCollected" to="orderConfirmation" />
 	</view-state>
-
-<!--  
+ 
 	<view-state id="collectShippingDetail" view="collectShippingDetail.jsp"
 		model="order">
 		<transition on="shippingDetailCollected" to="orderConfirmation" />
 		<transition on="backToCollectCustomerInfo" to="collectCustomerInfo" />
 	</view-state>
--->
 	
 	<view-state id="orderConfirmation" view="OrderConfirmation.jsp">
 		<transition on="orderConfirmed" to="processOrder" />
@@ -49,7 +47,7 @@
 		<transition to="endState" />
 	</view-state>
 
-	<end-state id="cancelCheckout" view="checkoutCancel.jsp" />
+	<end-state id="cancelCheckout" view="CheckoutCancel.jsp" />
 
 	<global-transitions>
 		<transition on="cancel" to="cancelCheckout" />

@@ -20,17 +20,17 @@
 
 		<div class="form-group">
 			<label for="name">Name</label>
-			<form:input path="users.fname" id="name" class="form-control" />
+			<form:input path="users.fName"  class="form-control" />
 		</div>
 
 		<div class="form-group">
 			<label for="email">Email</label>
-			<form:input path="users.email" id="email" class="form-control" />
+			<form:input path="users.email"  class="form-control" />
 		</div>
 
 		<div class="form-group">
 			<label for="phone">Mobile No.</label>
-			<form:input path="users.mobile" id="phone" class="form-control" />
+			<form:input path="users.mobile" class="form-control" />
 		</div>
 
 		<h3>Billing Address</h3>
@@ -38,31 +38,28 @@
 		<div class="form-group">
 			<label for="billingStreet">Street Name</label>
 			<form:input path="users.billing.addLine"
-				id="billingStreet" class="form-control" />
+				 class="form-control" />
 		</div>
 
 		<div class="form-group">
 			<label for="billingCity">City</label>
-			<form:input path="users.billing.city" id="billingCity"
-				class="form-control" />
+			<form:input path="users.billing.city" class="form-control" />
 		</div>
 
 		<div class="form-group">
 			<label for="billingState">State</label>
-			<form:input path="users.billing.state" id="billingState"
+			<form:input path="users.billing.state"
 				class="form-control" />
 		</div>
 
 		<div class="form-group">
 			<label for="billingCountry">Country</label>
-			<form:input path="users.billing.country"
-				id="billingCountry" class="form-control" />
+			<form:input path="users.billing.country" class="form-control" />
 		</div>
 
 		<div class="form-group">
 			<label for="billingZip">Zipcode</label>
-			<form:input path="users.billing.zipcode" id="billingZip"
-				class="form-control" />
+			<form:input path="users.billing.zipcode" class="form-control" />
 		</div>
 
 		<input type="hidden" name="_flowExecutionKey" />
