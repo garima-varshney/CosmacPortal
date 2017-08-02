@@ -86,17 +86,17 @@ public class UsersDaoImpl implements UsersDao {
 		}
 	}
 
-	public boolean displayUserById(int userId) {
+	public Users getUserById(int userId) {
 		Session s = sessionFactory.getCurrentSession();
 		try {
-			System.out.println("-- UserDaoImlp ---- displayUserById begins -- ");
+			System.out.println("-- UserDaoImlp ---- getUserById begins -- ");
 			Users u = (Users) s.get(Users.class, userId);
-			System.out.println("-- UserDaoImlp ---- displayUserById ends -- ");
-			return true;
+			System.out.println("-- UserDaoImlp ---- getUserById ends -- ");
+			return u;
 		} catch (Exception e) {
 			System.out.println("-- ERROR --");
 			e.printStackTrace();
-			return false;
+			return null;
 		}
 	}
 

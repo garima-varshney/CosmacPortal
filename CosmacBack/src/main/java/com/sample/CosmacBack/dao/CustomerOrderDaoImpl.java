@@ -28,10 +28,9 @@ public class CustomerOrderDaoImpl implements CustomerOrderDao{
 			customerOrder.setCustomerBilling(u.getBilling());
 			customerOrder.setCustomerShipping(u.getShipping());
 			customerOrder.setOrderStatus("Placed");
-			session.persist(customerOrder);
-			session.persist(u);
-			session.persist(u.getBilling());
-			session.persist(u.getShipping());
+			session.saveOrUpdate(customerOrder);
+			session.saveOrUpdate(u.getBilling());
+			session.saveOrUpdate(u.getShipping());
 			System.out.println("CustomerOrderDaoImpl -- addCustomerOrder ends");
 			return true;
 		}
