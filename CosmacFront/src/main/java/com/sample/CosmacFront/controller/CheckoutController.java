@@ -23,9 +23,11 @@ public class CheckoutController {
 	@RequestMapping("/order")
 	public String createOrder() {
 		// CustomerOrder customerOrder = new CustomerOrder();
+		System.out.println("CheckoutController -- begins -- ");
 		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
 		String loggedInUsername = auth.getName();
 		Users u = usersDao.getUserByUsername(loggedInUsername);
+		System.out.println("CheckoutController -- ends -- ");
 		return "redirect:/checkout?userId="+u.getUserId();
 	}
 }

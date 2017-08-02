@@ -10,7 +10,7 @@
  	http://www.springframework.org/schema/tx 
 	http://www.springframework.org/schema/tx/spring-tx.xsd 
 	http://www.springframework.org/schema/webflow-config 
-  	http://www.springframework.org/schema/webflow-config/spring-webflow-config-2.4.xsd
+  	http://www.springframework.org/schema/webflow-config/spring-webflow-config.xsd
   	http://www.springframework.org/schema/mvc 
 	http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 

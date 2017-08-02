@@ -7,7 +7,7 @@
 	<var name="order" class="com.sample.CosmacBack.model.CustomerOrder" />
 
 	<action-state id="addCartToOrder">
-		<evaluate expression="usersDao.displayUserById(requestParameters.userId)"
+		<evaluate expression="usersDao.getUserById(requestParameters.userId)"
 			result="order.users" />
 		<transition to="InvalidCart" on-exception="java.lang.Exception" />
 		<transition to="CustomerInfo" />
